@@ -25,6 +25,7 @@ font-style: ; /* Schriftschnitt */
 /* font-variant: ; */ /* Versalien, Kapitälchen usw. */
 /* text-decoration: ; */
 /* text-shadow: ; */
+/* text-rendering: ; */
 /* paint-order: ; */ /* für SVGs, wichig bei z.B. Schriftkonturen */
 
 /* ------------------------------------------------------ */
