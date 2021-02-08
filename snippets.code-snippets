@@ -22,6 +22,22 @@
 		"body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
 		"description": "A for loop."
 	},
+	"Storybook Stories.js Start": {
+		"scope": "javascript,typescript",
+		"prefix": [ "stories-start"],
+		"body": [
+			"import './${1:${TM_FILENAME/(.+?)\\..+$/$1/g}}.css';",
+			"import { create${2:${TM_FILENAME/(.+?)\\..+$/$1/g}} } from './${1:${TM_FILENAME/(.+?)\\..+$/$1/g}}';",
+			"",
+			"export default {",
+			"title: 'Components/${2:${TM_FILENAME/(.+?)\\..+$/$1/g}}',",
+			"parameters: { layout: 'centered' },",
+			"};",
+			"",
+			"export const ${2:${TM_FILENAME/(.+?)\\..+$/$1/g}} = () => create${2:${TM_FILENAME/(.+?)\\..+$/$1/g}}();",
+			],
+		"description": "Storybook-Stories-Start"
+	},
 	"Export function": {
 		"scope": "javascript,typescript",
 	  "prefix": [ "export-funct"],
